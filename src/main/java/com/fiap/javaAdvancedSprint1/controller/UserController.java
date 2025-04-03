@@ -28,14 +28,14 @@ public class UserController {
     @PostMapping("/users")
     @ResponseStatus(code = HttpStatus.CREATED)
     public User create(@RequestBody User user) {
-        System.out.println("Cadastrando categoria " + user.getName());
+        System.out.println("Cadastrando usuario " + user.getName());
         repository.add(user);
         return user;
     }
 
     @GetMapping("/user/{id}")
     public ResponseEntity<User> get(@PathVariable Long id) {
-        System.out.println("Buscando categoria " + id);
+        System.out.println("Buscando usuario " + id);
         var user = repository.stream()
                 .filter(c -> c.getId().equals(id))
                 .findFirst();

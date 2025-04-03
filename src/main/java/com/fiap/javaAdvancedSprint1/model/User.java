@@ -8,15 +8,17 @@ public class User {
     private String email;
     private String senha;
     private String cpf;
-    private Long idHotel;
+    private String nomeHotel;
+    private String cargo;
 
-    public User(Long id, String name, String email, String senha, String cpf, Long idHotel) {
+    public User(Long id, String name, String email, String senha, String cpf, String nomeHotel, String cargo) {
         this.id = Math.abs(new Random().nextLong());
         this.name = name;
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
-        this.idHotel = null;
+        this.nomeHotel = nomeHotel;
+        this.cargo = cargo;
     }
 
     public Long getId() {
@@ -39,8 +41,8 @@ public class User {
         return cpf;
     }
 
-    public Long getIdHotel() {
-        return idHotel;
+    public String getnomeHotel() {
+        return nomeHotel;
     }
 
 
