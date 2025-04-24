@@ -1,10 +1,10 @@
-package com.fiap.javaAdvancedSprint1;
+package br.com.fiap.HotelHub_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaAdvancedSprint1ApplicationTests {
+class HotelHubApiApplicationTests {
 
 	@Test
 	void contextLoads() {
